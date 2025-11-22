@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Try-On</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Virtual Try-On</h1>
+            <p>Try on Sunglasses, Hats, and Coats!</p>
+        </header>
+
+        <main>
+            <div class="preview-area">
+                <div class="canvas-container">
+                    <video id="webcam" autoplay playsinline muted style="display: none;"></video>
+                    <canvas id="output-canvas"></canvas>
+                    <img id="uploaded-image" style="display: none;">
+                </div>
+                <div class="controls">
+                    <button id="btn-camera">📷 Open Camera</button>
+                    <button id="btn-upload">📂 Upload Image</button>
+                    <input type="file" id="file-input" accept="image/*" style="display: none;">
+                    <button id="btn-delete" style="background-color: #ff7675;">🗑️ Delete Item</button>
+                    <button id="btn-download">⬇️ Download</button>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <h2>Select Item</h2>
+                <div id="product-list" class="product-grid">
+                    <!-- Products will be loaded here -->
+                </div>
+
+                <div id="loading" class="hidden">Processing...</div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

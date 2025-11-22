@@ -1,0 +1,20 @@
+[
+    {
+        "id": "sunglasses_1",
+        "type": "sunglasses",
+        "name": "Classic Sunglasses",
+        "image": "/assets/sunglasses/default.png"
+    },
+    {
+        "id": "hat_1",
+        "type": "hat",
+        "name": "Brown Hat",
+        "image": "/assets/hats/default.png"
+    },
+    {
+        "id": "coat_1",
+        "type": "coat",
+        "name": "Blue Coat",
+        "image": "/assets/coats/default.png"
+    }
+]
